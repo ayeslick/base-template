@@ -2,7 +2,7 @@
 cache/
 out/
 .env
-node_modules
+node_modules/
 
 # Ignores development broadcast logs
 !/broadcast
