@@ -14,6 +14,8 @@ contract ContractTest is Test {
     Utilities internal utils;
     address payable[] internal users;
 
+    Contract private c;
+
     address payable public alice;
     // address payable public bob;
     // address payable public charlie;
@@ -29,6 +31,8 @@ contract ContractTest is Test {
         utils = new Utilities();
         users = utils.createUsers(5);
         alice = users[0];
+
+        c = new Contract();
 
         //vm.deal(address(alice), 1_000_000_000 ether);
         //writeTokenBalanceERC20(address(alice), address(DAI), 200 ether);
