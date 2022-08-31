@@ -6,7 +6,9 @@ import {Utilities} from "./utils/Utilities.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
-contract Contract is Test {
+import "../src/Contract.sol";
+
+contract ContractTest is Test {
     using stdStorage for StdStorage;
 
     Utilities internal utils;
